@@ -1,0 +1,15 @@
+.tweet-head {
+
+  display: flex;
+  align-items: center;
+  .tweet-img  {
+    height: 35px;
+    width: 35px;
+    border-radius: 15px;
+
+  }
+
+  .description {
+    padding-left: 8px;
+  }
+}

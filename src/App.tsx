@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './components/left-menu-container/menu-bottom-items/menu-bottom-items'
+import LeftScreen from './components/left-menu-container/left-screen'
+import RightScreen from './components/right-add-container/right-screen'
+import CenterScreen from './components/center-twitter-feed/center-screen'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: 'flex', height: '100vh' }}>
+      <LeftScreen />
+      <CenterScreen />
+      <RightScreen />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
